@@ -1,0 +1,181 @@
+/* Base styles for entire page */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  background-color: #f5f5f5;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+body.dark-mode header,
+body.dark-mode main,
+body.dark-mode footer {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+/* Layout spacing for page sections */
+header, main, footer {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1, h2 {
+  color: #c76bb0;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+/* Box model - forms and fields */
+fieldset {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background-color: #fefefe;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 10px;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Form validation feedback */
+input.error, select.error, textarea.error {
+  border-color: #e63946;
+  background-color: #ffe5e5;
+}
+
+input.success, select.success, textarea.success {
+  border-color: #2a9d8f;
+  background-color: #e6fffa;
+}
+
+.error-message {
+  color: #e63946;
+  font-size: 0.9em;
+  margin-top: 2px;
+}
+
+/* Button styling */
+button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #61104c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c76bb0;
+}
+
+/* Media elements styling */
+img, video, audio {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+/* Flexbox and Grid layout enhancements */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Collapsible sections */
+.collapsible {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #eee;
+  border: none;
+  text-align: left;
+  font-size: 1.1em;
+  border-radius: 4px;
+}
+
+.collapsible.active {
+  background-color: #ccc;
+}
+
+.collapsible-content {
+  display: none;
+  padding: 10px;
+  background-color: #fafafa;
+}
+
+.collapsible-content.show {
+  display: block;
+}
+
+/* Responsive design using media queries */
+@media (max-width: 768px) {
+  header, main, footer {
+    padding: 15px;
+  }
+
+  .flex-container, .grid-container {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+/* Utility class for spacing */
+.mt-20 {
+  margin-top: 20px;
+}

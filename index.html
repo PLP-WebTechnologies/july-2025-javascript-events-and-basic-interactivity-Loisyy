@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript interactivity</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header id="pageHeader">
+    <h1 id="mainTitle">Welcome CSS Layout and Responsive Design</h1>
+    <p id="introText">This page demonstrates semantic structure, lists, tables, media, and a complete HTML5 form with validation.</p>
+    <nav>
+      <ul class="nav">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#form">Form</a></li>
+      </ul>
+    </nav>
+    <button id="changeTitleBtn">Change Title</button>
+    <button id="theme-toggle">🌙 Dark Mode</button>
+  </header>
+
+  <main class="container">
+    <section id="features">
+      <h2>Features List</h2>
+      <ul id="featureList">
+        <li>Responsive layout using Flexbox and Grid</li>
+        <li>Accessible HTML structure</li>
+        <li>Embedded media content</li>
+        <li>Interactive HTML5 form with validation</li>
+      </ul>
+    </section>
+
+    <section id="schedule">
+      <h2>Sample Table: Course Schedule</h2>
+      <table id="courseTable">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Topic</th>
+            <th>Instructor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>HTML Basics</td>
+            <td>Jane Doe</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>Forms and Validation</td>
+            <td>John Smith</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>Media and Tables</td>
+            <td>Mary Lee</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="media">
+      <h2>Media Examples</h2>
+      <div class="media-grid">
+        <figure id="imageFigure">
+          <img src="https://cdn.britannica.com/13/225313-050-3519547A/Lime-butterfly-Papilio-demoleus-feeding-on-flower.jpg"
+            alt="Sample Placeholder Image" width="400" height="200" />
+          <figcaption>Figure 1: A sample image embedded using HTML5.</figcaption>
+        </figure>
+
+        <div id="audioContainer">
+          <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div id="videoContainer">
+          <video width="400" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video element.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section id="extraFeatures">
+      <div class="flex-container" id="flexFeatures">
+        <div>
+          <h2>Feature One</h2>
+          <p>Description for feature one.</p>
+        </div>
+        <div>
+          <h2>Feature Two</h2>
+          <p>Description for feature two.</p>
+        </div>
+        <div>
+          <h2>Feature Three</h2>
+          <p>Description for feature three.</p>
+        </div>
+      </div>
+
+      <div class="grid-container mt-20" id="imageGrid">
+        <div>
+          <img src="https://thumbs.dreamstime.com/b/diffuse-pink-blue-butterfly-flying-generative-ai-design-background-instagram-facebook-wall-painting-backgrounds-art-325233916.jpg" alt="Sample Image 1">
+          <p>Image 1 caption</p>
+        </div>
+        <div>
+          <img src="https://i.natgeofe.com/k/9acd2bad-fb0e-43a8-935d-ec0aefc60c2f/monarch-butterfly-grass_3x2.jpg" alt="Sample Image 2">
+          <p>Image 2 caption</p>
+        </div>
+        <div>
+          <img src="https://cdn.shopify.com/s/files/1/0094/2823/8432/files/butterfly_1.jpg?v=1639027237" alt="Sample Image 3">
+          <p>Image 3 caption</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Counter Game -->
+    <section id="counter-game" class="mt-20">
+      <h2>Click Counter Game</h2>
+      <p>Click the button as many times as you can!</p>
+      <button id="counter-btn">Click Me!</button>
+      <p id="counter-display">Count: 0</p>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq-section" class="mt-20">
+      <h2>FAQ</h2>
+      <div class="faq-item">
+        <h3 class="faq-question">What is responsive design?</h3>
+        <p class="faq-answer">Responsive design ensures your site looks great on all devices.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">What is Flexbox?</h3>
+        <p class="faq-answer">Flexbox is a CSS layout mode for arranging items efficiently.</p>
+      </div>
+    </section>
+
+    <section id="form">
+      <h2>Contact & Registration Form</h2>
+      <form id="registrationForm" action="#" method="post" autocomplete="off">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" placeholder="John Doe">
+
+          <label for="email">Email Address:</label>
+          <input type="text" id="email" name="email" placeholder="you@example.com">
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob">
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="e.g. 08012345678">
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Details</legend>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" placeholder="Choose a username">
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password">
+
+          <label for="confirm">Confirm Password:</label>
+          <input type="password" id="confirm" name="confirm">
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender">
+            <option value="">--Select--</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="nonbinary">Non-binary</option>
+            <option value="prefer-not">Prefer not to say</option>
+          </select>
+
+          <label for="bio">Short Bio:</label>
+          <textarea id="bio" name="bio" rows="4" placeholder="Tell us a bit about yourself..."></textarea>
+
+          <label>
+            <input type="checkbox" id="terms" name="terms">
+            I agree to the terms and conditions
+          </label>
+        </fieldset>
+
+        <button id="submitBtn" type="submit">Submit</button>
+        <p id="form-feedback" class="error"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer id="pageFooter">
+    <p>&copy; 2025 HTML5 Form Demo. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
